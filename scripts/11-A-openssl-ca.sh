@@ -1,15 +1,7 @@
 #!/bin/bash
 # Autor: Robson Vaamonde
-# Site: www.procedimentosemti.com.br
-# Facebook: facebook.com/ProcedimentosEmTI
-# Facebook: facebook.com/BoraParaPratica
-# YouTube: youtube.com/BoraParaPratica
-# Linkedin: https://www.linkedin.com/in/robson-vaamonde-0b029028/
-# Instagram: https://www.instagram.com/procedimentoem/?hl=pt-br
-# Github: https://github.com/vaamonde
 # Data de criação: 16/10/2021
 # Data de atualização: 05/05/2022
-# Versão: 0.14
 # Testado e homologado para a versão do Ubuntu Server 20.04.x LTS x64x
 # Testado e homologado para a versão do OpenSSL v1.1.x
 #
@@ -150,7 +142,7 @@ if [ "$USUARIO" == "0" ] && [ "$UBUNTU" == "20.04" ]
 	then
 		echo -e "O usuário é Root, continuando com o script..."
 		echo -e "Distribuição é >= 20.04.x, continuando com o script..."
-		sleep 5
+		sleep 3
 	else
 		echo -e "Usuário não é Root ($USUARIO) ou a Distribuição não é >= 20.04.x ($UBUNTU)"
 		echo -e "Caso você não tenha executado o script com o comando: sudo -i"
@@ -165,7 +157,7 @@ fi
 if [ "$(nc -zw1 google.com 443 &> /dev/null ; echo $?)" == "0" ]
 	then
 		echo -e "Você tem acesso a Internet, continuando com o script..."
-		sleep 5
+		sleep 3
 	else
 		echo -e "Você NÃO tem acesso a Internet, verifique suas configurações de rede IPV4"
 		echo -e "e execute novamente este script."

@@ -50,11 +50,11 @@ export DEBIAN_FRONTEND="noninteractive"
 # Declarando as variáveis utilizadas nas configurações de Rede do Servidor Ubuntu 
 #
 # Variável do Usuário padrão utilizado no Servidor Ubuntu desse curso
-USUARIODEFAULT="vaamonde"
+USUARIODEFAULT="paulo"
 #
 # Variável da Senha padrão utilizado no Servidor Ubuntu desse curso
 # OBSERVAÇÃO IMPORTANTE: essa variável será utilizada em outras variáveis desse curso
-SENHADEFAULT="pti@2018"
+SENHADEFAULT="paulo83"
 #
 # Variável do Nome (Hostname) do Servidor Ubuntu desse curso
 NOMESERVER="srvzabbix"
@@ -227,7 +227,7 @@ SECRETUPDATE="vaamonde"
 USERUPDATE="vaamonde"
 #
 # Variável das dependências do laço de loop da integração do Bind DNS e do ISC DHCP Server
-DHCPDNSDEP="isc-dhcp-server bind9"
+#DHCPDNSDEP="isc-dhcp-server bind9"
 #
 #=============================================================================================
 #                       VARIÁVEIS UTILIZADAS NO SCRIPT: 05-ntp.sh                            #
@@ -594,7 +594,7 @@ CRIPTOCERT="sha256"
 DOWNLOADCERT="/var/www/html/download/"
 #
 # Variável das dependências do laço de loop do OpenSSL
-SSLDEPCA="openssl bind9 apache2"
+SSLDEPCA="openssl apache2" #bind9
 #
 #=============================================================================================
 #                        VARIÁVEIS UTILIZADAS NO SCRIPT: 12-webdav.sh                        #
